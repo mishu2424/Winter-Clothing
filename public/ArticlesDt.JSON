@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "title": "Mastering Layering: The Key to All-Season Comfort",
+      "image": "https://example.com/images/layering-guide.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/layering-guide.jpg",
+      "description": "Discover expert layering techniques for optimal warmth and style in any weather.",
+      "category": "Style Tips",
+      "author": "Emily Carter",
+      "publish_date": "2025-03-01",
+      "reading_time": "6 min",
+      "tags": ["Layering", "Style", "Winter", "Fashion"]
+    },
+    {
+      "id": 2,
+      "title": "What is Tech-Infused Apparel?",
+      "image": "https://example.com/images/tech-clothing.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/tech-clothing.jpg",
+      "description": "Learn how smart fabrics and technology are revolutionizing modern clothing.",
+      "category": "Innovation",
+      "author": "Michael Johnson",
+      "publish_date": "2025-03-05",
+      "reading_time": "5 min",
+      "tags": ["Technology", "Smart Clothing", "Innovation"]
+    },
+    {
+      "id": 3,
+      "title": "Choosing the Right Jacket for Any Adventure",
+      "image": "https://example.com/images/jacket-guide.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/jacket-guide.jpg",
+      "description": "Find out which jacket suits your next outdoor activity, from hiking to skiing.",
+      "category": "Outdoor Gear",
+      "author": "Sarah Thompson",
+      "publish_date": "2025-03-10",
+      "reading_time": "7 min",
+      "tags": ["Jackets", "Outdoor", "Adventure", "Winter"]
+    },
+    {
+      "id": 4,
+      "title": "The Best Footwear for Winter Adventures",
+      "image": "https://example.com/images/winter-boots.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/winter-boots.jpg",
+      "description": "Stay warm and stylish with our top picks for winter boots.",
+      "category": "Footwear",
+      "author": "David Lee",
+      "publish_date": "2025-03-15",
+      "reading_time": "6 min",
+      "tags": ["Boots", "Winter", "Footwear", "Style"]
+    },
+    {
+      "id": 5,
+      "title": "Stay Dry: Understanding Waterproof Fabrics",
+      "image": "https://example.com/images/waterproof-clothing.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/waterproof-clothing.jpg",
+      "description": "A deep dive into waterproof materials and how they keep you dry.",
+      "category": "Fabric Technology",
+      "author": "Anna Williams",
+      "publish_date": "2025-03-18",
+      "reading_time": "5 min",
+      "tags": ["Waterproof", "Fabric", "Rain Gear"]
+    },
+    {
+      "id": 6,
+      "title": "What to Wear for Spring Hiking",
+      "image": "https://example.com/images/spring-hiking.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/spring-hiking.jpg",
+      "description": "Gear up for spring hikes with our guide to breathable and durable clothing.",
+      "category": "Outdoor Guide",
+      "author": "Jake Miller",
+      "publish_date": "2025-03-20",
+      "reading_time": "6 min",
+      "tags": ["Hiking", "Spring", "Outdoor", "Clothing"]
+    },
+    {
+      "id": 7,
+      "title": "Sustainable Fashion: Eco-Friendly Materials You Should Know",
+      "image": "https://example.com/images/sustainable-fashion.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/sustainable-fashion.jpg",
+      "description": "Explore the best sustainable materials and brands making a difference in fashion.",
+      "category": "Sustainability",
+      "author": "Olivia Brown",
+      "publish_date": "2025-03-25",
+      "reading_time": "7 min",
+      "tags": ["Sustainability", "Eco-Friendly", "Fashion"]
+    },
+    {
+      "id": 8,
+      "title": "The Science Behind Thermal Clothing",
+      "image": "https://example.com/images/thermal-clothing.jpg",
+      "thumbnail_img": "https://example.com/thumbnails/thermal-clothing.jpg",
+      "description": "Learn how thermal clothing keeps you warm without adding bulk.",
+      "category": "Fabric Technology",
+      "author": "Dr. Ethan Walker",
+      "publish_date": "2025-03-28",
+      "reading_time": "6 min",
+      "tags": ["Thermal", "Winter", "Warmth", "Technology"]
+    }
+  ]
+  

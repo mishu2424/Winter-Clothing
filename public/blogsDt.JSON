@@ -1,0 +1,115 @@
+{
+    "blogs": [
+      {
+        "id": "blog-001",
+        "title": "A New Day Filled With Joy",
+        "author": {
+          "id": "user-101",
+          "name": "Tung Hoang",
+          "profile_url": "https://example.com/tung-hoang",
+          "avatar": "https://example.com/avatar1.jpg"
+        },
+        "date_published": "2025-02-17",
+        "category": "News",
+        "comments": {
+          "count": 0,
+          "latest_comment": null
+        },
+        "views": 1250,
+        "likes": 320,
+        "shares": 45,
+        "description": "Quisque elementum nibh at dolor pellentesque, a eleifend libero pharetra. Mauris neque felis, volutpat nec...",
+        "read_more_link": "https://example.com/a-new-day-filled-with-joy",
+        "featured_image": "https://example.com/blog-image1.jpg"
+      },
+      {
+        "id": "blog-002",
+        "title": "Mastering Minimalist Fashion",
+        "author": {
+          "id": "user-102",
+          "name": "Sophia Lee",
+          "profile_url": "https://example.com/sophia-lee",
+          "avatar": "https://example.com/avatar2.jpg"
+        },
+        "date_published": "2025-03-05",
+        "category": "Fashion",
+        "comments": {
+          "count": 12,
+          "latest_comment": "Love these tips! Minimalist fashion is my go-to style."
+        },
+        "views": 3400,
+        "likes": 785,
+        "shares": 120,
+        "description": "Minimalism is more than a trend; it’s a lifestyle. Learn how to build a timeless wardrobe with essential pieces.",
+        "read_more_link": "https://example.com/mastering-minimalist-fashion",
+        "featured_image": "https://example.com/blog-image2.jpg"
+      },
+      {
+        "id": "blog-003",
+        "title": "The Ultimate Travel Packing Guide",
+        "author": {
+          "id": "user-103",
+          "name": "David Chen",
+          "profile_url": "https://example.com/david-chen",
+          "avatar": "https://example.com/avatar3.jpg"
+        },
+        "date_published": "2025-02-28",
+        "category": "Travel",
+        "comments": {
+          "count": 5,
+          "latest_comment": "This guide saved me so much time! Thanks!"
+        },
+        "views": 2780,
+        "likes": 680,
+        "shares": 90,
+        "description": "Packing smart can make or break your trip. Follow these expert tips to travel light and stress-free.",
+        "read_more_link": "https://example.com/travel-packing-guide",
+        "featured_image": "https://example.com/blog-image3.jpg"
+      },
+      {
+        "id": "blog-004",
+        "title": "Healthy Eating Habits for a Better Life",
+        "author": {
+          "id": "user-104",
+          "name": "Emily Johnson",
+          "profile_url": "https://example.com/emily-johnson",
+          "avatar": "https://example.com/avatar4.jpg"
+        },
+        "date_published": "2025-03-10",
+        "category": "Health",
+        "comments": {
+          "count": 8,
+          "latest_comment": "Great advice! Small changes can make a big difference."
+        },
+        "views": 1920,
+        "likes": 520,
+        "shares": 60,
+        "description": "Eating healthy doesn’t have to be complicated. Discover simple changes you can make today to improve your well-being.",
+        "read_more_link": "https://example.com/healthy-eating-habits",
+        "featured_image": "https://example.com/blog-image4.jpg"
+      },
+      {
+        "id": "blog-005",
+        "title": "Home Office Setup for Maximum Productivity",
+        "author": {
+          "id": "user-105",
+          "name": "Michael Smith",
+          "profile_url": "https://example.com/michael-smith",
+          "avatar": "https://example.com/avatar5.jpg"
+        },
+        "date_published": "2025-02-20",
+        "category": "Work & Productivity",
+        "comments": {
+          "count": 15,
+          "latest_comment": "Just revamped my workspace. It feels amazing!"
+        },
+        "views": 3050,
+        "likes": 750,
+        "shares": 110,
+        "description": "Your workspace plays a huge role in your productivity. Learn how to create an environment that keeps you focused and motivated.",
+        "read_more_link": "https://example.com/home-office-setup",
+        "featured_image": "https://example.com/blog-image5.jpg"
+      }
+    ]
+  }
+  
