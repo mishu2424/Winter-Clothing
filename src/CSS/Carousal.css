@@ -1,0 +1,9 @@
+react-multi-carousel-dot button {
+    background-color: white !important; /* Makes dots white */
+    opacity: 0.5; /* Optional: Makes dots slightly transparent */
+  }
+  
+  .react-multi-carousel-dot--active button {
+    background-color: white !important; /* Ensures active dot is also white */
+    opacity: 1; /* Fully visible for active dot */
+  }
