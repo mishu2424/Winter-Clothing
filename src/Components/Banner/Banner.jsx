@@ -3,7 +3,7 @@ import Carousal from '../Carousal';
 
 const Banner = () => {
     return (
-        <div>
+        <div className=''>
             <Carousal></Carousal>
         </div>
     );

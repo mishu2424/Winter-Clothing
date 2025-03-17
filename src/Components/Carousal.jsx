@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import '../CSS/Carousal.css'
 const Carousal = () => {
   return (
-    <div>
+    <div className="">
       <Carousel
         additionalTransfrom={0}
         arrows
@@ -47,7 +47,7 @@ const Carousal = () => {
             items: 1,
           },
         }}
-        rewind={false}
+        rewind
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
@@ -72,13 +72,13 @@ const Carousal = () => {
             </p>
             <a
               href="#_"
-              class="px-5 py-2.5 relative btn rounded-none group overflow-hidden font-medium bg-purple-50 text-purple-600 inline-block"
+              className="px-5 py-2.5 relative btn rounded-none group overflow-hidden font-medium bg-purple-50 text-purple-600 inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
-              <span class="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-purple-600 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
+              <span className="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-purple-600 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
 
               {/* Button Text */}
-              <span class="relative group-hover:text-white">Shop now</span>
+              <span className="relative group-hover:text-white">Shop now</span>
             </a>
           </div>
         </div>
@@ -91,13 +91,13 @@ const Carousal = () => {
             </p>
             <a
               href="#_"
-              class="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
+              className="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
-              <span class="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-red-600 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
+              <span className="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-red-600 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
 
               {/* Button Text */}
-              <span class="relative group-hover:text-white">Shop Now</span>
+              <span className="relative group-hover:text-white">Shop Now</span>
             </a>
           </div>
         </div>
@@ -110,18 +110,17 @@ const Carousal = () => {
             </p>
             <a
               href="#_"
-              class="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
+              className="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
-              <span class="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-amber-500 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
+              <span className="absolute bottom-0 left-0 flex w-full h-0 transition-all duration-200 ease-out transform translate-y-full bg-amber-500 group-hover:h-full group-hover:translate-y-0 opacity-90"></span>
 
               {/* Button Text */}
-              <span class="relative group-hover:text-white">Shop Now</span>
+              <span className="relative group-hover:text-white">Shop Now</span>
             </a>
           </div>
         </div>
       </Carousel>
-      ;
     </div>
   );
 };
