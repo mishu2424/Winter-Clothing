@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDteqAafDWAq_CZdoxpXUl840SEgTT9aEA",
-  authDomain: "clothing-store-auth-384cd.firebaseapp.com",
-  projectId: "clothing-store-auth-384cd",
-  storageBucket: "clothing-store-auth-384cd.firebasestorage.app",
-  messagingSenderId: "698293507840",
-  appId: "1:698293507840:web:515a92de944a5a156085e5"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
