@@ -17,7 +17,7 @@ const ShowCategories = ({ categoryTitle, source }) => {
   }, [categoryTitle]);
   return (
     <div className="max-w-7xl mx-auto my-3 flex flex-col justify-center ">
-       <h2 className="text-2xl font-extrabold text-start">{categoryTitle}</h2> 
+       <h2 className="text-2xl font-extrabold text-start">{categoryTitle.charAt(0).toUpperCase()+categoryTitle.slice(1).toLowerCase()}</h2> 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
         {selectedItems.map((article) => (
           <Article key={article.id} article={article} source={source}></Article>

@@ -22,7 +22,7 @@ const BlogCard = ({blog}) => {
       {/* Content */}
       <div className="p-4 grow">
         <h2 className="text-lg font-semibold">{blog?.title}</h2>
-        <p className="text-gray-600 text-sm">{blog?.description}</p>
+        <p title={blog?.description} className="text-gray-600 text-sm">{`${blog?.description.substring(1,100)}...`}</p>
       </div>
 
       {/* Actions */}

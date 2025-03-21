@@ -145,8 +145,9 @@ const Navbar = () => {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              {user && user?.photoURL ? (
-                <img src={user.photoURL}></img>
+              {user ? (
+                user?.photoURL ? 
+                <img src={user.photoURL}></img> : <FaUserCircle className="w-full h-full" />
               ) : (
                 <FaUserCircle className="w-full h-full" />
               )}

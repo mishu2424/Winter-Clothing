@@ -11,6 +11,7 @@ const ShowBlogs = () => {
   }, []);
   return (
     <div className="w-[80vw] mx-auto lg:max-w-7xl my-2">
+      <h1 className="text-2xl font-extrabold text-start">Blogs</h1>
       <Carousel
         additionalTransfrom={0}
         arrows
