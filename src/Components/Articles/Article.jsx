@@ -20,17 +20,17 @@ const Article = ({ article, source }) => {
           }`}
         />
         {hovered && source === "articles" && (
-          <div className="absolute top-1/2 left-[40%] duration-500">
+          <div className="absolute top-[40%] left-[35%] duration-500">
             <Link
               to={`/article/${id}`}
               className="btn bg-transparent rounded-none text-white border border-white"
             >
-              Details <GoArrowUpRight />
+              Article <GoArrowUpRight />
             </Link>
           </div>
         )}
         {hovered && source === "home" && (
-          <div className="absolute top-1/2 left-[40%] duration-500">
+          <div className="absolute top-[40%] left-[35%] duration-500">
             <Link
               to={`/product/${id}`}
               className="btn bg-transparent rounded-none text-white border border-white"

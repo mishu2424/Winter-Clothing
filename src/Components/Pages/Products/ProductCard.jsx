@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { FiHeart, FiMaximize, FiSearch, FiShoppingBag } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
+import ReactStars from "react-rating-stars-component";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 const ProductCard = ({ product }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -17,7 +20,8 @@ const ProductCard = ({ product }) => {
             src={hovered ? product.thumbnail_img : product.image}
             alt={product.title}
             className={`w-full h-72 object-cover transition-opacity duration-300 ${
-              hovered && "transition duration-300 ease-in-out hover:brightness-75 opacity-95"
+              hovered &&
+              "transition duration-300 ease-in-out hover:brightness-75 opacity-95"
             }`}
           />
           {hovered && (
@@ -38,9 +42,17 @@ const ProductCard = ({ product }) => {
           )}
           {hovered && (
             <>
-              <div data-tooltip-id="my-tooltip"
-        data-tooltip-content="Click to Show Details!" className="absolute top-[45%] left-[30%] duration-500">
-                <Link to={`/product/${product.id}`} className="btn bg-transparent rounded-none text-white border border-white">Show Details</Link>
+              <div
+                data-tooltip-id="my-tooltip"
+                data-tooltip-content="Click to Show Details!"
+                className="absolute top-[45%] left-[30%] duration-500"
+              >
+                <Link
+                  to={`/product/${product.id}`}
+                  className="btn bg-transparent rounded-none text-white border border-white"
+                >
+                  Show Details
+                </Link>
               </div>
               <Tooltip className="duration-500" id="my-tooltip" />
             </>
@@ -74,12 +86,25 @@ const ProductCard = ({ product }) => {
           )}
           <h3 className="text-sm text-gray-700">{product.title}</h3>
           <div className="flex justify-center space-x-1 text-gray-400 text-xs mt-1">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>({product.rating})</span>
+            <ReactStars
+              count={5}
+              size={14}
+              isHalf={true}
+              value={product.rating || 0}
+              emptyIcon={
+                <FontAwesomeIcon icon={faStar} className="text-gray-400" />
+              } // Empty stars
+              halfIcon={
+                <FontAwesomeIcon
+                  icon={faStarHalfAlt}
+                  className="text-yellow-400"
+                />
+              } // Half stars
+              filledIcon={
+                <FontAwesomeIcon icon={faStar} className="text-yellow-400" />
+              } // Full stars
+              activeColor="#ffd700"
+            />
           </div>
           <div className="mt-2">
             {product.isSale ? (

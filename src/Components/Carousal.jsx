@@ -1,7 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import '../CSS/Carousal.css'
+import "../CSS/Carousal.css";
+import { Link } from "react-router-dom";
 const Carousal = () => {
   return (
     <div className="">
@@ -70,8 +71,8 @@ const Carousal = () => {
               Stay ahead of the trends with our latest collection. Shop now and
               redefine your wardrobe.
             </p>
-            <a
-              href="#_"
+            <Link
+              to={`/products`}
               className="px-5 py-2.5 relative btn rounded-none group overflow-hidden font-medium bg-purple-50 text-purple-600 inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
@@ -79,7 +80,7 @@ const Carousal = () => {
 
               {/* Button Text */}
               <span className="relative group-hover:text-white">Shop now</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="min-h-screen w-full flex items-center justify-center bg-[url('/slider1.webp')] bg-cover bg-center">
@@ -89,8 +90,8 @@ const Carousal = () => {
               Enjoy up to 50% OFF on winter essentials. Limited stock—shop now
               before it's gone!
             </p>
-            <a
-              href="#_"
+            <Link
+              to={`/products`}
               className="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
@@ -98,7 +99,7 @@ const Carousal = () => {
 
               {/* Button Text */}
               <span className="relative group-hover:text-white">Shop Now</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="min-h-screen w-full flex items-center justify-center bg-[url('/slider3.webp')] bg-cover bg-center">
@@ -108,8 +109,8 @@ const Carousal = () => {
               Enjoy up to 50% OFF on winter essentials. Limited stock—shop now
               before it's gone!
             </p>
-            <a
-              href="#_"
+            <Link
+              to={`/products`}
               className="btn px-5 py-2.5 relative rounded-none group overflow-hidden font-medium bg-purple-50 text-black inline-block"
             >
               {/* Background Overlay (Moves from Bottom to Top) */}
@@ -117,7 +118,7 @@ const Carousal = () => {
 
               {/* Button Text */}
               <span className="relative group-hover:text-white">Shop Now</span>
-            </a>
+            </Link>
           </div>
         </div>
       </Carousel>

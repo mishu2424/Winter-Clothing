@@ -30,7 +30,7 @@
       "isSale": true,
       "price": 159.99,
       "is_new": true,
-      "rating": 4.9,
+      "rating": 4.0,
       "material": "Wool blend, Faux fur",
       "sizes": ["XS", "S", "M", "L"],
       "colors": ["Beige", "Black", "Burgundy"]
@@ -48,7 +48,7 @@
       "isSale": true,
       "price": 49.99,
       "is_new": false,
-      "rating": 4.7,
+      "rating": 5,
       "material": "Waterproof leather, Rubber sole",
       "sizes": ["10C", "11C", "12C", "13C"],
       "colors": ["Blue", "Pink", "Red"]
@@ -66,7 +66,7 @@
       "isSale": true,
       "price": 19.99,
       "is_new": true,
-      "rating": 4.6,
+      "rating": 4.0,
       "material": "100% Wool",
       "sizes": ["One Size"],
       "colors": ["Black", "Gray", "Green"]
@@ -84,7 +84,7 @@
       "isSale": false,
       "price": 59.99,
       "is_new": false,
-      "rating": 4.5,
+      "rating": 3.0,
       "material": "Fleece, Cotton blend",
       "sizes": ["M", "L", "XL"],
       "colors": ["Gray", "Navy", "Black"]
@@ -102,7 +102,7 @@
       "isSale": true,
       "price": 24.99,
       "is_new": true,
-      "rating": 4.7,
+      "rating": 3.5,
       "material": "Wool, Spandex",
       "sizes": ["S", "M", "L"],
       "colors": ["Pink", "Black", "Gray"]
@@ -390,7 +390,7 @@
         "isSale": false,
         "price": 89.99,
         "is_new": false,
-        "rating": 4.8,
+        "rating": 3.5,
         "material": "Nylon, Waterproof Coating",
         "sizes": ["S", "M", "L", "XL"],
         "colors": ["Pink", "Blue", "Black"]
@@ -426,7 +426,7 @@
         "isSale": true,
         "price": 29.99,
         "is_new": false,
-        "rating": 4.7,
+        "rating": 4.0,
         "material": "Cashmere, Wool blend",
         "sizes": ["One Size"],
         "colors": ["Beige", "Black", "Gray"]

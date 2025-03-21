@@ -2,7 +2,9 @@ import { FaBook, FaEye, FaUser } from "react-icons/fa";
 import { FcLike, FcReading } from "react-icons/fc";
 import { MdStarRate } from "react-icons/md";
 import { useLoaderData, useParams } from "react-router-dom";
-
+import ReactStars from "react-rating-stars-component";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 const ArticleDetails = () => {
   const { articleId } = useParams();
   console.log(articleId);
@@ -64,7 +66,27 @@ const ArticleDetails = () => {
             <p className="text-base flex gap-2 items-center"><FcLike /><span className="font-bold w-20">Likes: </span>{SelectedCollection?.likes}</p>
           </div>
           <div>
-            <p className="text-base flex gap-2 items-center"><MdStarRate /><span className="font-bold w-20">Rating: </span>{SelectedCollection?.rating}</p>
+            <p className="text-base flex gap-2 items-center"><MdStarRate /><span className="font-bold w-20">Rating: </span>{SelectedCollection?.rating}
+            <ReactStars
+                          count={5}
+                          size={14}
+                          isHalf={true}
+                          value={SelectedCollection.rating || 0}
+                          emptyIcon={
+                            <FontAwesomeIcon icon={faStar} className="text-gray-400" />
+                          } // Empty stars
+                          halfIcon={
+                            <FontAwesomeIcon
+                              icon={faStarHalfAlt}
+                              className="text-yellow-400"
+                            />
+                          } // Half stars
+                          filledIcon={
+                            <FontAwesomeIcon icon={faStar} className="text-yellow-400" />
+                          } // Full stars
+                          activeColor="#ffd700"
+                        />
+            </p>
           </div>
         </div>
       </div>

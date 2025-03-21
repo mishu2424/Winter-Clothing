@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Blog = ({blog}) => {
     return (
         <div className="group max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
@@ -24,12 +26,12 @@ const Blog = ({blog}) => {
             | {blog.comments.count} comments
           </p>
           <p className="mt-4 text-gray-700">{blog.description}</p>
-          <a
+          <Link to={`/blog/${blog.id}`}
             href={blog.read_more_link}
             className="inline-block mt-4 bg-red-500 text-white py-2 px-4 rounded"
           >
             READ MORE
-          </a>
+          </Link>
         </div>
       </div>
     );

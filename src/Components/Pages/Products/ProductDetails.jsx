@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const ProductDetails = () => {
   const { productId } = useParams();
+  const { theme } = useContext(AuthContext);
   const productCollections = useLoaderData();
   const SelectedCollection = productCollections.find(
     (selectedProduct) => selectedProduct.id === Number(productId)
@@ -24,32 +27,32 @@ const ProductDetails = () => {
           </button>
         </div>
         {SelectedCollection?.isSale && (
-            <span className="bg-red-500 text-white px-3 py-1 text-sm absolute top-4 left-4">
-              {SelectedCollection.sale}
-            </span>
-          )}
+          <span className="bg-red-500 text-white px-3 py-1 text-sm absolute top-4 left-4">
+            {SelectedCollection.sale}
+          </span>
+        )}
       </div>
 
       {/* Product Details Section */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className={`mt-6 grid grid-cols-1 md:grid-cols-2 gap-6`}>
         <div>
           <h3 className="text-xl font-semibold">Product Details</h3>
-          <p className="text-gray-700 mt-2">
+          <p className={`mt-2 ${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Category:</strong> {SelectedCollection?.category}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Division:</strong> {SelectedCollection?.division}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Material:</strong> {SelectedCollection?.material}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Status:</strong> {SelectedCollection?.status}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Price:</strong> ${SelectedCollection?.price}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Rating:</strong> ⭐ {SelectedCollection?.rating} / 5
           </p>
         </div>
@@ -57,15 +60,15 @@ const ProductDetails = () => {
         {/* Sizes & Colors */}
         <div>
           <h3 className="text-xl font-semibold">Available Options</h3>
-          <p className="text-gray-700 mt-2">
+          <p className={`mt-2 ${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Sizes:</strong> {SelectedCollection?.sizes.join(", ")}
           </p>
-          <p className="text-gray-700">
+          <p className={`${theme==='night' ? 'text-white' : "text-gray-700"}`}>
             <strong>Colors:</strong>{" "}
             {SelectedCollection?.colors.map((color, index) => (
               <span
                 key={index}
-                className="inline-block px-3 py-1 mr-2 text-white rounded-md"
+                className="inline-block px-3 py-1 mr-2  rounded-md"
                 style={{ backgroundColor: color.toLowerCase() }}
               >
                 {color}

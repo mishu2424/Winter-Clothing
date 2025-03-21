@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({blog}) => {
   const [hovered, setHovered] = useState(false)
@@ -12,8 +13,8 @@ const BlogCard = ({blog}) => {
       <div className="relative">
       <img className={`w-full h-60 lg:h-48 object-cover object-top ${hovered && 'brightness-75'}`} src={blog?.featured_image} alt={blog?.title} />
       {
-        hovered && <div className="absolute top-1/2 left-[40%] duration-500">
-          <button className="btn bg-transparent rounded-none text-white border border-white">Details <GoArrowUpRight /></button>
+        hovered && <div className="absolute top-1/2 left-[38%] duration-500">
+          <Link to={`/blog/${blog.id}`} className="btn bg-transparent rounded-none text-white border border-white">Details <GoArrowUpRight /></Link>
         </div>
       }
       </div>

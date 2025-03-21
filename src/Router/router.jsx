@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Components/Pages/Home/Home";
 import Products from "../Components/Pages/Products/Products";
@@ -10,11 +10,21 @@ import AllProducts from "../Components/AllProducts/AllProducts";
 import SingleProduct from "../Components/SingleProduct/SingleProduct";
 import ArticleDetails from "../Components/Articles/ArticleDetails";
 import ProductDetails from "../Components/Pages/Products/ProductDetails";
+import BlogDetails from "../Components/Pages/Blogs/BlogDetails";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import Login from "../Components/Authentication/Login";
+import Authentication from "../Components/Authentication/Authentication";
+import Register from "../Components/Authentication/Register";
+import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
+import ForgetPass from "../Components/Authentication/ForgetPass";
+import UserProfile from "../Components/UserProfile/UserProfile";
+import UpdateProfile from "../Components/Authentication/UpdateProfile";
 
 const router = createBrowserRouter([
     {
         path:'/',
         element:<Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',
@@ -47,22 +57,62 @@ const router = createBrowserRouter([
             },
             {
                 path:'/articles',
-                element:<MainArticles></MainArticles>,
+                element:<PrivateRoute><MainArticles></MainArticles></PrivateRoute>,
                 loader:()=>fetch('/ArticlesDt.JSON'),
             },
             {
                 path:'/article/:articleId',
-                element:<ArticleDetails></ArticleDetails>,
+                element:<PrivateRoute><ArticleDetails></ArticleDetails></PrivateRoute>,
                 loader:()=>fetch('/ArticlesDt.JSON'),
                 
             },
             {
                 path:'/product/:productId',
-                element:<ProductDetails></ProductDetails>,
+                element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
                 loader:()=>fetch('/ClothesDt.JSON'),
                 
             },
+            {
+                path:'/blog/:blogId',
+                element:<PrivateRoute><BlogDetails></BlogDetails></PrivateRoute>,
+                loader:()=>fetch('/blogsDt.JSON'),
+                
+            },
         ]
+    },
+    {
+        path:'/auth',
+        element:<Authentication></Authentication>,
+        children:[
+            {
+                index:true,
+                element:<Navigate to="/auth/login"></Navigate>
+            },
+            {
+                path:'/auth/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/auth/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/auth/forgetPassword',
+                element:<ForgetPass></ForgetPass>
+            },
+            {
+                path:'/auth/profile',
+                element:<UserProfile></UserProfile>
+            },
+            {
+                path:'/auth/updatedProfile',
+                element:<UpdateProfile></UpdateProfile>
+            }
+        ]
+    },
+    {
+        path:"*",
+        element:<ErrorPage></ErrorPage>
     }
 ])
 

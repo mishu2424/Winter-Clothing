@@ -48,8 +48,8 @@ const About = () => {
             "Warm up your style this winter with cozy essentials at unbeatable
             prices.Embrace the season in style—where comfort meets unbeatable savings!"
           </p>
-          <a
-            href="#_"
+          <Link
+          to={`/products/sales`}
             className="relative btn inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-amber-600 transition duration-300 ease-out border-2 border-amber-500 rounded-none group"
           >
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-amber-500 group-hover:translate-x-0 ease">
@@ -72,7 +72,7 @@ const About = () => {
               Sale
             </span>
             <span className="relative invisible">Sale</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
